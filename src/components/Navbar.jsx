@@ -46,10 +46,11 @@ const Navbar = () => {
                         <ul className="eventList">
                             <Link to="/rodeo-concerts" className="linkItem"><li className="listItem">Concerts</li></Link>
                             <Link to="/rodeo-info" className="linkItem"><li className="listItem">Rodeo</li></Link>
-                            <Link to="https://nprarodeo.com/" className="linkItem"><li className="listItem">NPRA</li></Link>
+                            <Link to="https://nprarodeo.com/" target="_blank" className="linkItem"><li className="listItem">NPRA</li></Link>
                         </ul>
                     </div>
                 </div>
+                <Link to="/become-a-sponsor" className="link"><h2 className="navLink sponsor">Become a sponsor</h2></Link>
             </div>
         </div>
     )
