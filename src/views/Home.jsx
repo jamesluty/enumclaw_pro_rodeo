@@ -35,7 +35,7 @@ const Home = () => {
                                 <p className="prices">5 and Under</p>
                                 <p className="prices">6-11</p>
                                 <p className="prices">12 and Over</p>
-                                <p className="prices">Seniors(65+)/Military/Veterans</p>
+                                <p className="prices">Seniors (65+) / Military / Veterans</p>
                             </div>
                             <div className="pricesRight">
                                 <p className="prices">Free</p>
@@ -52,6 +52,11 @@ const Home = () => {
                     <p className="infoText">With $40,000 added to the contestant's purse the Enumclaw Pro Rodeo offers an exceptional payout, allowing us to draw top rodeo contestants from the US and Canada.</p>
                     <p className="infoText">The Enumclaw Pro Rodeo offers a spectacular rodeo weekend with top prize money, the finest livestock, the best rodeo announcer and rodeo entertainer in professional rodeo.</p>
                 </div>
+            </div>
+            <h1 className="volunteer">Volunteer to Help at this years Rodeo</h1>
+            <div className="sponsorsDiv">
+                <h1 className="sponsorsTitle">2023 Enumclaw Pro Rodeo Sponsors</h1>
+                <Link to="/become-a-sponsor"><h2 className="sponsorLink">Click here to become a Sponsor</h2></Link>
             </div>
         </div>
     )
