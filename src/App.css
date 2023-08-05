@@ -61,7 +61,11 @@ body {
   background-color: rgb(232,230,230);
   list-style: none;
   position: absolute;
-  width: 25vmin;
+  width: 200px;
+}
+
+.eventList {
+  width: 143px;
 }
 
 .listItem {
