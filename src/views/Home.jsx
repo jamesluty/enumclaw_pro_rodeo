@@ -1,9 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import yates from '../imgs/hollywood_yates.webp';
+import blake from '../imgs/jared_blake.webp';
+import vinny from '../imgs/bigg_vinny.webp';
 
 const Home = () => {
     return (
         <div className="homeWrapper">
+            {/* Main page information */}
             <h1 className="homeTitle">Enumclaw Pro Rodeo</h1>
             <Link to="https://www.rodeoticket.com/rodeos/enumclaw-pro-rodeo/2023/tickets" target="_blank"><h1 className="ticketsTitle">Get Your Rodeo TICKETS HERE</h1></Link>
             <div className="info">
@@ -53,7 +57,32 @@ const Home = () => {
                     <p className="infoText">The Enumclaw Pro Rodeo offers a spectacular rodeo weekend with top prize money, the finest livestock, the best rodeo announcer and rodeo entertainer in professional rodeo.</p>
                 </div>
             </div>
-            <h1 className="volunteer">Volunteer to Help at this years Rodeo</h1>
+            <Link to="https://www.comevolunteer.com/events/14456-enumclaw-pro-rodeo/volunteer" target="_blank"><h1 className="volunteer">Volunteer to Help at this years Rodeo</h1></Link>
+            {/* Rodeo Concerts */}
+            <div className="concertsDiv">
+                <h1 className="concertsTitle">2023 Rodeo Concerts</h1>
+                <div className="artistDiv">
+                    <div className="artist">
+                        <h3 className="artistInfo">&nbsp;</h3>
+                        <h3 className="artistInfo">Friday Night</h3>
+                        <h3 className="artistInfo">Hollywood Yates</h3>
+                        <img src={yates} alt="hollywood_yates" className="artistImg" />
+                    </div>
+                    <div className="artist">
+                        <h3 className="artistInfo">Saturday Night</h3>
+                        <h3 className="artistInfo">Jared Blake</h3>
+                        <h3 className="artistInfo">The Voice - Team Blake</h3>
+                        <img src={blake} alt="jared_blake" className="artistImg" />
+                    </div>
+                    <div className="artist">
+                        <h3 className="artistInfo">Saturday Night</h3>
+                        <h3 className="artistInfo">Big Vinny</h3>
+                        <h3 className="artistInfo">American Idol</h3>
+                        <img src={vinny} alt="big_vinny" className="artistImg" />
+                    </div>
+                </div>
+            </div>
+            {/* Sponsors Info */}
             <div className="sponsorsDiv">
                 <h1 className="sponsorsTitle">2023 Enumclaw Pro Rodeo Sponsors</h1>
                 <Link to="/become-a-sponsor"><h2 className="sponsorLink">Click here to become a Sponsor</h2></Link>
