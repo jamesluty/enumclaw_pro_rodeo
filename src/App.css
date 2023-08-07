@@ -12,12 +12,23 @@ body {
 /* Navbar css */
 .navbar {
   align-items: center;
-  /* background-color: rgb(31, 31, 31); */
   background-color: rgb(65, 0, 0);
   display: flex;
   gap: 20px;
   justify-content: space-between;
 }
+/*
+.navbar::before {
+  content: "";
+  background-image: url('./imgs/banner.jpg');
+  background-size: cover;
+  filter: brightness(80%);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+} */
 
 .navLinks {
   align-items: center;
@@ -32,7 +43,7 @@ body {
 }
 
 .navLink {
-  background-color: rgb(232,230,230);
+  background-color: white;
   border: 2px solid rgb(50,35,33);
   box-shadow: 0px 0px 3px 3px rgb(232,230,230);
   color: rgb(65, 0, 0);
@@ -50,7 +61,7 @@ body {
 }
 
 .navLogo {
-  width: 25vmin;
+  width: 25vmin;  z-index: 1;
 }
 
 #eventDropdown, #infoDropdown {
@@ -58,7 +69,8 @@ body {
 }
 
 .infoList, .eventList {
-  background-color: rgb(232,230,230);
+  /* background-color: rgb(232,230,230); */
+  background-color: white;
   list-style: none;
   position: absolute;
   width: 200px;
@@ -79,26 +91,33 @@ body {
 }
 
 .listItem:hover {
-  background-color: rgb(65, 0, 0);
-  color: orange;
+  /* background-color: rgb(65, 0, 0); */
+  background-color: grey;
+  /* color: orange; */
+  color: white;
 }
 
 /* Home Page css */
 .homeWrapper {
-  background-color: rgb(105, 60, 0);
+  /* background-color: rgb(121, 68, 0); */
+  background-image: url('./imgs/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .homeTitle {
+  color: rgb(150, 85, 0);
   font-size: 80px;
   padding: 50px 0px 0px 0px;
   text-align: center;
-  text-shadow: 5px 7px black;
-  -webkit-text-fill-color: burlywood;
+  text-shadow: 3px 3px 3px black;
+  /* -webkit-text-fill-color: rgb(150, 85, 0); */
 }
 
-.ticketsTitle {
-  color: rgb(207, 0, 0);
-  font-size: 60px;
+.ticketsLink {
+  color: red;
+  font-size: 35px;
   margin-top: 50px;
   text-align: center;
   text-decoration: underline;
@@ -115,7 +134,7 @@ body {
 }
 
 .infoLeft {
-  color: burlywood;
+  /* color: white; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -183,15 +202,17 @@ body {
 }
 
 .infoText {
-  color: rgb(186,218,83);
+  color: rgb(103, 134, 0);
+  color: yellow;
   font-size: 20px;
   font-style: italic;
-  line-height: 35px;
+  font-weight: 600;
+  line-height: 33px;
   margin-bottom: 20px;
 }
 
 .volunteerLink {
-  color: rgb(207, 0, 0);
+  color: red;
   font-size: 35px;
   margin-bottom: 50px;
   text-align: center;
@@ -205,10 +226,11 @@ body {
 }
 
 .concertsTitle {
-  color: burlywood;
+  /* color: burlywood; */
+  color: rgb(150, 85, 0);
   font-size: 60px;
   text-align: center;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 3px 3px 3px black;
 }
 
 .artistDiv {
@@ -219,7 +241,7 @@ body {
 }
 
 .artistInfo {
-  color: white;
+  /* color: white; */
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 5px;
@@ -237,10 +259,10 @@ body {
 }
 
 .eventsTitle {
-  color: burlywood;
+  color: rgb(150, 85, 0);;
   font-size: 60px;
   text-align: center;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 3px 3px 3px black;
 }
 
 .eventsList {
@@ -254,9 +276,9 @@ body {
 }
 
 .eventName {
-  color: lightgray;
-  font-size: 25px;
-  margin-bottom: 30px;
+  /* color: white; */
+  font-size: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -280,13 +302,34 @@ body {
 }
 
 .sponsorsTitle {
-  color: burlywood;
-  font-size: 40px;
-  margin-bottom: 20px;
+  /* color: burlywood; */
+  color: rgb(150, 85, 0);
+  font-size: 60px;
+  margin: 20px 0px;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
 }
 
 .sponsorLink {
-  color: burlywood;
+  color: red;
   font-size: 30px;
+  margin: 15px 0px;
   text-decoration: underline;
+}
+
+.presentingSponsor {
+  /* color: white; */
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 45px;
+}
+
+.presentingImg {
+  height: 15vw;
+}
+
+.sponsorsListTitle {
+  /* color: white; */
+  font-size: 45px;
+  margin-bottom: 20px;
 }

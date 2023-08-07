@@ -9,13 +9,14 @@ import steerWresting from '../imgs/steer_wresting.jpg';
 import tieDownRoping from '../imgs/tie_down_roping.jpg';
 import teamRoping from '../imgs/team_roping.jpg';
 import barrelRacing from '../imgs/barrel_racing.jpg';
+import old_cannery from '../imgs/old_cannery.png';
 
 const Home = () => {
     return (
         <div className="homeWrapper">
             {/* Main page information */}
             <h1 className="homeTitle">Enumclaw Pro Rodeo</h1>
-            <Link to="https://www.rodeoticket.com/rodeos/enumclaw-pro-rodeo/2023/tickets" target="_blank"><h1 className="ticketsTitle">Get Your Rodeo TICKETS HERE</h1></Link>
+            <Link to="https://www.rodeoticket.com/rodeos/enumclaw-pro-rodeo/2023/tickets" target="_blank"><h1 className="ticketsLink">Get Your Rodeo TICKETS HERE</h1></Link>
             <div className="info">
                 <div className="infoLeft">
                     <h2 className="infoDate">August 25-27 2023</h2>
@@ -124,8 +125,15 @@ const Home = () => {
             </div>
             {/* Sponsors Info */}
             <div className="sponsorsDiv">
-                <h1 className="sponsorsTitle">2023 Enumclaw Pro Rodeo Sponsors</h1>
+                <h1 className="sponsorsTitle">Enumclaw Pro Rodeo Sponsors</h1>
                 <Link to="/become-a-sponsor"><h2 className="sponsorLink">Click here to become a Sponsor</h2></Link>
+                <div>
+                    <h3 className="presentingSponsor">2023 Presenting Sponsor</h3>
+                    <img src={old_cannery} alt="old_cannery" className="presentingImg" />
+                </div>
+                <div className="sponsorList">
+                    <h3 className="sponsorsListTitle">2023 Sponsors</h3>
+                </div>
             </div>
         </div>
     )

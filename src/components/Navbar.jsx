@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../imgs/EPR_logo.png';
+// import banner from '../imgs/banner.jpg';
 
 const Navbar = () => {
     const showInfo = () => {
