@@ -190,9 +190,9 @@ body {
   margin-bottom: 20px;
 }
 
-.volunteer {
+.volunteerLink {
   color: rgb(207, 0, 0);
-  font-size: 45px;
+  font-size: 35px;
   margin-bottom: 50px;
   text-align: center;
   text-decoration: underline;
@@ -206,8 +206,9 @@ body {
 
 .concertsTitle {
   color: burlywood;
-  font-size: 45px;
+  font-size: 60px;
   text-align: center;
+  text-shadow: 5px 5px 5px black;
 }
 
 .artistDiv {
@@ -228,6 +229,47 @@ body {
 .artistImg {
   height: 30vw;
   width: 25vw;
+}
+
+/* Rodeo Event Section */
+.eventsDiv {
+  margin: 30px 20px;
+}
+
+.eventsTitle {
+  color: burlywood;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+}
+
+.eventsList {
+  margin-top: 30px;
+}
+
+.eventsTop, .eventsBot {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.eventName {
+  color: lightgray;
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.eventImg {
+  border-radius: 10px;
+  height: 22vw;
+  transition: 0.5s all ease-in-out;
+  width: 28vw;
+}
+
+.eventImg:hover {
+  transform: scale(1.05);
+  filter: brightness(120%);
 }
 
 /* Sponsors List section */

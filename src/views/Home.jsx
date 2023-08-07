@@ -1,8 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import yates from '../imgs/hollywood_yates.webp';
-import blake from '../imgs/jared_blake.webp';
+import blake from '../imgs/jared_blake.png';
 import vinny from '../imgs/bigg_vinny.webp';
+import bullRiding from '../imgs/bull_riding.jpg';
+import buckinBroncs from '../imgs/buckin_broncs.jpg';
+import steerWresting from '../imgs/steer_wresting.jpg';
+import tieDownRoping from '../imgs/tie_down_roping.jpg';
+import teamRoping from '../imgs/team_roping.jpg';
+import barrelRacing from '../imgs/barrel_racing.jpg';
 
 const Home = () => {
     return (
@@ -57,10 +63,10 @@ const Home = () => {
                     <p className="infoText">The Enumclaw Pro Rodeo offers a spectacular rodeo weekend with top prize money, the finest livestock, the best rodeo announcer and rodeo entertainer in professional rodeo.</p>
                 </div>
             </div>
-            <Link to="https://www.comevolunteer.com/events/14456-enumclaw-pro-rodeo/volunteer" target="_blank"><h1 className="volunteer">Volunteer to Help at this years Rodeo</h1></Link>
+            <Link to="https://www.comevolunteer.com/events/14456-enumclaw-pro-rodeo/volunteer" target="_blank"><h1 className="volunteerLink">Volunteer to Help at this years Rodeo</h1></Link>
             {/* Rodeo Concerts */}
             <div className="concertsDiv">
-                <h1 className="concertsTitle">2023 Rodeo Concerts</h1>
+                <h1 className="concertsTitle">Rodeo Concerts</h1>
                 <div className="artistDiv">
                     <div className="artist">
                         <h3 className="artistInfo">&nbsp;</h3>
@@ -79,6 +85,40 @@ const Home = () => {
                         <h3 className="artistInfo">Big Vinny</h3>
                         <h3 className="artistInfo">American Idol</h3>
                         <img src={vinny} alt="big_vinny" className="artistImg" />
+                    </div>
+                </div>
+            </div>
+            {/* Rodeo Events */}
+            <div className="eventsDiv">
+                <h1 className="eventsTitle">Rodeo Events</h1>
+                <div className="eventsList">
+                    <div className="eventsTop">
+                        <div className="event">
+                            <h3 className="eventName">Bull Riding</h3>
+                            <img src={bullRiding} alt="bull_riding" className="eventImg"/>
+                        </div>
+                        <div className="event">
+                            <h3 className="eventName">Bull Riding</h3>
+                            <img src={buckinBroncs} alt="buckin_broncs" className="eventImg"/>
+                        </div>
+                        <div className="event">
+                            <h3 className="eventName">Bull Riding</h3>
+                            <img src={steerWresting} alt="steer_wresting" className="eventImg"/>
+                        </div>
+                    </div>
+                    <div className="eventsBot">
+                        <div className="event">
+                            <h3 className="eventName">Bull Riding</h3>
+                            <img src={tieDownRoping} alt="tie_down_roping" className="eventImg"/>
+                        </div>
+                        <div className="event">
+                            <h3 className="eventName">Bull Riding</h3>
+                            <img src={teamRoping} alt="team_roping" className="eventImg"/>
+                        </div>
+                        <div className="event">
+                            <h3 className="eventName">Bull Riding</h3>
+                            <img src={barrelRacing} alt="barrel_racing" className="eventImg"/>
+                        </div>
                     </div>
                 </div>
             </div>
