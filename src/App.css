@@ -333,3 +333,16 @@ body {
   font-size: 45px;
   margin-bottom: 20px;
 }
+
+.sponsorLogos {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 150px;
+}
+
+.logo {
+  height: 5vw;
+}

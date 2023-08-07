@@ -10,6 +10,30 @@ import tieDownRoping from '../imgs/tie_down_roping.jpg';
 import teamRoping from '../imgs/team_roping.jpg';
 import barrelRacing from '../imgs/barrel_racing.jpg';
 import old_cannery from '../imgs/old_cannery.png';
+import northway from '../imgs/northway_logo.png';
+import barghausen from '../imgs/barghausen_logo.png';
+import trm from '../imgs/trm_logo.png';
+import rbh from '../imgs/rbh_logo.jpg';
+import cannon from '../imgs/cannon_logo.png';
+import country from '../imgs/country_square_logo.png';
+import gutters from '../imgs/gutters_logo.jpg';
+import grange from '../imgs/grange_logo.png';
+import schoenfeld from '../imgs/schoenfeld_farm_logo.png';
+import linex from '../imgs/linex_logo.png';
+import gamblin from '../imgs/gamblin_logo.png';
+import pursuit from '../imgs/pursuit_logo.webp';
+import xo from '../imgs/xo_logo.png';
+import mikes from '../imgs/mikes_logo.gif';
+import walrath from '../imgs/walrath_logo.png';
+import watterson from '../imgs/watterson_logo.png';
+import pavilion from '../imgs/pavilion_logo.png';
+import commencement from '../imgs/commencement_logo.png';
+import jd from '../imgs/jd_logo.jpg';
+import brahma from '../imgs/brahma_logo.jpg';
+import luft from '../imgs/luft_logo.png';
+import columbia from '../imgs/columbia_logo.png';
+import courier from '../imgs/courier_logo.png';
+import bell from '../imgs/bell_logo.svg';
 
 const Home = () => {
     return (
@@ -133,6 +157,32 @@ const Home = () => {
                 </div>
                 <div className="sponsorList">
                     <h3 className="sponsorsListTitle">2023 Sponsors</h3>
+                    <div className="sponsorLogos">
+                        <img src={northway} alt="northway_logo"  className="logo" />
+                        <img src={barghausen} alt="barghausen_logo" className="logo" />
+                        <img src={trm} alt="trm_logo" className="logo" />
+                        <img src={rbh} alt="rbh_logo" className="logo" />
+                        <img src={cannon} alt="cannon_logo" className="logo" />
+                        <img src={country} alt="country_square_logo" className="logo" />
+                        <img src={gutters} alt="gutters_logo" className="logo" />
+                        <img src={grange} alt="grange_logo" className="logo" />
+                        <img src={schoenfeld} alt="schoenfeld_logo" className="logo" />
+                        <img src={linex} alt="linex_logo" className="logo" />
+                        <img src={gamblin} alt="gamblin_logo" className="logo" />
+                        <img src={pursuit} alt="pursuit_logo" className="logo" />
+                        <img src={xo} alt="xo_logo" className="logo" />
+                        <img src={mikes} alt="mikes_logo" className="logo" />
+                        <img src={walrath} alt="walrath_logo" className="logo" />
+                        <img src={watterson} alt="watterson_logo" className="logo" />
+                        <img src={pavilion} alt="pavilion_logo" className="logo" />
+                        <img src={commencement} alt="commencement_logo" className="logo" />
+                        <img src={jd} alt="jd_logo" className="logo" />
+                        <img src={brahma} alt="brahma_logo" className="logo" />
+                        <img src={luft} alt="luft_logo" className="logo" />
+                        <img src={columbia} alt="columbia_logo" className="logo" />
+                        <img src={courier} alt="courier_logo" className="logo" />
+                        <img src={bell} alt="bell_logo" className="logo" />
+                    </div>
                 </div>
             </div>
         </div>
