@@ -99,7 +99,6 @@ body {
 
 /* Home Page css */
 .homeWrapper {
-  /* background-color: rgb(121, 68, 0); */
   background-image: url('./imgs/banner.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -373,6 +372,7 @@ body {
 
 
 .siteMapCol {
+  align-items: center;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -381,8 +381,7 @@ body {
 }
 
 .eprLogo {
-  height: 15vw;
-  width: 18vw;
+  width: 225px;
 }
 
 .siteMapLink {
@@ -405,4 +404,135 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+
+/* Rodeo Info Page */
+.rodeoInfoWrapper {
+  background-image: url('./imgs/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 100px;
+}
+
+.rodeoInfoTitle {
+  color: rgb(150, 85, 0);
+  font-size: 60px;
+  padding: 80px 0px 30px 0px;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+}
+
+.rodeoInfoTicket {
+  background-color: white;
+  border: 3px solid rgb(150, 85, 0);
+  margin: 10px 200px 0px 200px;
+}
+
+.ticketTop {
+  margin-bottom: 20px;
+}
+
+.ticketTop, .ticketBottom {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.rodeoInfoLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+.horseshoeImg {
+  align-self: center;
+  transform: rotate(45deg);
+  width: 50px;
+}
+
+.rodeoInfoSecTitle {
+  font-size: 30px;
+}
+
+.rodeoInfoDates {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rodeoInfoTimes {
+  font-size: 18px;
+}
+
+.halfCircle {
+  height: 80px;
+  width: 160px;
+  border-radius: 0 0 150px 150px;
+  background-color: rgb(150, 85, 0);
+}
+
+.rodeoInfoImg {
+  border: 2px solid rgb(150, 85, 0);
+  box-shadow: 0 0 6px 3px rgb(168, 110, 34);
+  margin: 40px 0px;
+  width: 300px;
+}
+
+.dashedLine {
+  border: none;
+  border-top: 3px dashed rgb(150, 85, 0);
+}
+
+.tabLeft, .tabRight {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 50px 10px;
+  text-align: center;
+}
+
+.tabTitle {
+  color: rgb(150, 85, 0);
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.tabInfo {
+  font-size: 17px;
+}
+
+.purchaseBtn {
+  align-self: center;
+  background-color: burlywood;
+  border: 2px solid rgb(150, 85, 0);
+  color: black;
+  margin-top: 15px;
+  padding: 10px;
+  text-decoration: none;
+  width: 40%;
+}
+
+.purchaseBtn:hover {
+  color: yellow;
+}
+
+.dashedLineVert {
+  border: none;
+  border-right: 3px dashed rgb(150, 85, 0);
+}
+
+.ticketSeller {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.tabSubTitle {
+  font-size: 20px;
+  font-weight: bold;
 }
