@@ -259,7 +259,7 @@ body {
 }
 
 .eventsTitle {
-  color: rgb(150, 85, 0);;
+  color: rgb(150, 85, 0);
   font-size: 60px;
   text-align: center;
   text-shadow: 3px 3px 3px black;
@@ -345,4 +345,64 @@ body {
 
 .logo {
   height: 5vw;
+}
+
+/* SiteMap Component */
+.siteMapWrapper {
+  background-color: rgb(27, 27, 27);
+  padding: 0px50px;
+}
+
+.line {
+  color: white;
+}
+
+.siteMapTitle {
+  color: rgb(150, 85, 0);
+  font-size: 45px;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.siteMapLinks {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  padding: 30px 100px;
+}
+
+
+.siteMapCol {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+
+.eprLogo {
+  height: 15vw;
+  width: 18vw;
+}
+
+.siteMapLink {
+  color: white;
+  font-size: 18px;
+  margin: 0px 10px 10px 0px;
+  text-decoration: none;
+}
+
+.siteMapLink:hover {
+  color: orange;
+}
+
+.colTitle {
+  color: burlywood;
+  margin-bottom: 15px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
