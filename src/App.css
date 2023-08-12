@@ -95,7 +95,7 @@ body {
 .homeTitle {
   color: rgb(150, 85, 0);
   font-size: 80px;
-  padding: 50px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
   text-align: center;
   text-shadow: 3px 3px 3px black;
 }
@@ -354,7 +354,6 @@ body {
 
 
 .siteMapCol {
-  align-items: center;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -378,7 +377,7 @@ body {
 }
 
 .colTitle {
-  color: burlywood;
+  color: rgb(150, 85, 0);
   margin-bottom: 15px;
 }
 
@@ -599,4 +598,99 @@ body {
   color: rgb(205, 127, 50);
   font-size: 45px;
   text-shadow: 0px 0px 5px black;
+}
+
+/* Sponsor Form Page */
+.sponsorFormWrapper {
+  padding: 80px 0px 100px 0px;
+}
+
+.sponsorFormTitle {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sponsorFormSubTitle {
+  font-size: 18px;
+  text-align: center;
+}
+
+.sponsorForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0px 80px 0px;
+}
+
+.formLine {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.formInput {
+  background-color: whitesmoke;
+  font-size: 20px;
+  padding: 15px 15px;
+}
+
+.formSubmit {
+  align-self: center;
+  background-color: rgb(63, 63, 63);
+  color: white;
+  padding: 15px;
+  width: 200px;
+}
+
+.formSubmit:hover {
+  background-color: black;
+}
+
+.platinumBundle {
+  background-color: rgb(229, 228, 226);
+  border: 2px solid red;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px black, -3px 3px 3px black;
+  margin: 30px 25%;
+  padding: 20px;
+}
+
+.bundleTitle {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.bundleText {
+  font-size: 20px;
+  list-style: inside;
+  margin: 5px 0px;
+}
+
+.goldBundle {
+  background-color: rgb(255,215,0);
+  border: 2px solid red;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px black, -3px 3px 3px black;
+  margin: 30px 25%;
+  padding: 20px;
+}
+
+.silverBundle {
+  background-color: rgb(192,192,192);
+  border: 2px solid red;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px black, -3px 3px 3px black;
+  margin: 30px 25%;
+  padding: 20px;
+}
+
+.bronzeBundle {
+  background-color: rgb(205, 127, 50);
+  border: 2px solid red;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px black, -3px 3px 3px black;
+  margin: 30px 25%;
+  padding: 20px;
 }

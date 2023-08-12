@@ -20,6 +20,7 @@ const SiteMap = () => {
                     <Link to="/" className="siteMapLink">Home</Link>
                     <Link to="https://www.enumclawexpo.com/p/camping" target="_blank" className="siteMapLink">Camping</Link>
                     <Link to="/sponsors" className="siteMapLink">Sponsors</Link>
+                    <Link to="/become-a-sponsor" className="siteMapLink">Become a Sponsor</Link>
                     <Link to="https://www.comevolunteer.com/events/14456-enumclaw-pro-rodeo/volunteer" target="_blank" className="siteMapLink">Volunteer</Link>
                     <Link to="https://www.google.com/maps/dir/47.6176482,-122.3551744/enumclaw+expo+center/@47.4065602,-122.4391977,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x5490eded92f9b31d:0x7c3b05cd68089d18!2m2!1d-121.9631639!2d47.195209?entry=ttu" target="_blank" className="siteMapLink">Directions</Link>
                     <Link to="https://nprarodeo.com/" target="_blank" className="siteMapLink">NPRA</Link>
