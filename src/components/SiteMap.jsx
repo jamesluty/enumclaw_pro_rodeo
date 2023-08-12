@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import EPR_logo from '../imgs/EPR_logo_black.png';
 import facebook from '../imgs/facebook_icon.png';
-import twitter from '../imgs/twitter_logo.png'
+// import twitter from '../imgs/twitter_logo.png';
 
 const SiteMap = () => {
     return (
