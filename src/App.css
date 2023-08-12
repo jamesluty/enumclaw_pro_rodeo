@@ -186,13 +186,14 @@ body {
 }
 
 .infoText {
-  color: yellow;
+  /* color: yellow; */
+  color: green;
   font-size: 20px;
   font-style: italic;
   font-weight: 600;
   line-height: 33px;
   margin-bottom: 20px;
-  text-shadow: 0 0 3px black;
+  /* text-shadow: 0 0 1px black; */
 }
 
 .volunteerLink {
@@ -362,6 +363,7 @@ body {
 }
 
 .eprLogo {
+  margin-top: 20px;
   width: 225px;
 }
 

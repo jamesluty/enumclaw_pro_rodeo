@@ -2,8 +2,9 @@ import React from 'react'
 
 const Sponsor_Form = () => {
     const sendEmail = () => {
-
+        
     }
+
     return (
         <div className="sponsorFormWrapper">
             <h1 className="sponsorFormTitle">Become a Sponsor</h1>
