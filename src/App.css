@@ -17,18 +17,6 @@ body {
   gap: 20px;
   justify-content: space-between;
 }
-/*
-.navbar::before {
-  content: "";
-  background-image: url('./imgs/banner.jpg');
-  background-size: cover;
-  filter: brightness(80%);
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-} */
 
 .navLinks {
   align-items: center;
@@ -69,7 +57,6 @@ body {
 }
 
 .infoList, .eventList {
-  /* background-color: rgb(232,230,230); */
   background-color: white;
   list-style: none;
   position: absolute;
@@ -91,18 +78,18 @@ body {
 }
 
 .listItem:hover {
-  /* background-color: rgb(65, 0, 0); */
   background-color: grey;
-  /* color: orange; */
   color: white;
 }
 
 /* Home Page css */
 .homeWrapper {
+  background: fixed;
   background-image: url('./imgs/banner.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-bottom: 50px;
 }
 
 .homeTitle {
@@ -111,7 +98,6 @@ body {
   padding: 50px 0px 0px 0px;
   text-align: center;
   text-shadow: 3px 3px 3px black;
-  /* -webkit-text-fill-color: rgb(150, 85, 0); */
 }
 
 .ticketsLink {
@@ -133,7 +119,6 @@ body {
 }
 
 .infoLeft {
-  /* color: white; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -201,13 +186,13 @@ body {
 }
 
 .infoText {
-  color: rgb(103, 134, 0);
   color: yellow;
   font-size: 20px;
   font-style: italic;
   font-weight: 600;
   line-height: 33px;
   margin-bottom: 20px;
+  text-shadow: 0 0 3px black;
 }
 
 .volunteerLink {
@@ -225,7 +210,6 @@ body {
 }
 
 .concertsTitle {
-  /* color: burlywood; */
   color: rgb(150, 85, 0);
   font-size: 60px;
   text-align: center;
@@ -240,7 +224,6 @@ body {
 }
 
 .artistInfo {
-  /* color: white; */
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 5px;
@@ -275,7 +258,6 @@ body {
 }
 
 .eventName {
-  /* color: white; */
   font-size: 30px;
   margin-bottom: 20px;
   text-align: center;
@@ -301,7 +283,6 @@ body {
 }
 
 .sponsorsTitle {
-  /* color: burlywood; */
   color: rgb(150, 85, 0);
   font-size: 60px;
   margin: 20px 0px;
@@ -314,10 +295,10 @@ body {
   font-size: 30px;
   margin: 15px 0px;
   text-decoration: underline;
+  text-align: center;
 }
 
 .presentingSponsor {
-  /* color: white; */
   margin-top: 15px;
   margin-bottom: 5px;
   font-size: 45px;
@@ -325,10 +306,10 @@ body {
 
 .presentingImg {
   height: 15vw;
+  margin-bottom: 20px;
 }
 
 .sponsorsListTitle {
-  /* color: white; */
   font-size: 45px;
   margin-bottom: 20px;
 }
@@ -340,6 +321,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: 30px 150px;
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -349,7 +331,7 @@ body {
 /* SiteMap Component */
 .siteMapWrapper {
   background-color: rgb(27, 27, 27);
-  padding: 0px50px;
+  padding: 0px;
 }
 
 .line {
@@ -376,7 +358,7 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   text-align: center;
 }
 
@@ -392,7 +374,7 @@ body {
 }
 
 .siteMapLink:hover {
-  color: orange;
+  color: yellow;
 }
 
 .colTitle {
@@ -408,6 +390,7 @@ body {
 
 /* Rodeo Info Page */
 .rodeoInfoWrapper {
+  background: fixed;
   background-image: url('./imgs/banner.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -535,4 +518,85 @@ body {
 .tabSubTitle {
   font-size: 20px;
   font-weight: bold;
+}
+
+/* Concert Page */
+.concertWrapper {
+  background: fixed;
+  background-image: url('./imgs/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 100px;
+}
+
+.concertPageTitle {
+  color: rgb(150, 85, 0);
+  font-size: 60px;
+  padding: 80px 0px 30px 0px;
+  text-shadow: 3px 3px 3px black;
+  text-align: center;
+}
+
+/* Sponsors Page */
+.sponsorsWrapper {
+  background: fixed;
+  background-image: url('./imgs/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 50px;
+}
+
+.sponsorsPageTitle {
+  color: rgb(150, 85, 0);
+  font-size: 60px;
+  padding: 80px 0px 30px 0px;
+  text-shadow: 3px 3px 3px black;
+  text-align: center;
+}
+
+.presSponsorDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.presSponsorTitle {
+  text-align: center;
+}
+
+.presSponsorImg {
+  align-self: center;
+}
+
+.presSponsorTitle {
+  color: rgba(109, 169, 199);
+  color: black;
+  font-size: 55px;
+  margin-top: 20px;
+  text-shadow: 0px 0px 5px white;
+}
+
+.platinumListTitle {
+  color: rgb(229, 228, 226);
+  font-size: 45px;
+  text-shadow: 0px 0px 5px black;
+}
+
+.goldListTitle {
+  color: rgb(255,215,0);
+  font-size: 45px;
+  text-shadow: 0px 0px 5px black;
+}
+
+.silverListTitle {
+  color: rgb(192,192,192);
+  font-size: 45px;
+  text-shadow: 0px 0px 5px black;
+}
+
+.bronzeListTitle {
+  color: rgb(205, 127, 50);
+  font-size: 45px;
+  text-shadow: 0px 0px 5px black;
 }
