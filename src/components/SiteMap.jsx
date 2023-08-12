@@ -10,9 +10,11 @@ const SiteMap = () => {
             {/* <h1 className="siteMapTitle">Enumclaw Pro Rodeo</h1>
             <hr className="line" /> */}
             <div className="siteMapLinks">
+                {/* Logo Column */}
                 <div className="siteMapCol">
                     <img src={EPR_logo} alt="epr_logo" className="eprLogo" />
                 </div>
+                {/* Information Column */}
                 <div className="siteMapCol">
                     <h3 className="colTitle">Rodeo Information</h3>
                     <Link to="/" className="siteMapLink">Home</Link>
@@ -22,12 +24,14 @@ const SiteMap = () => {
                     <Link to="https://www.google.com/maps/dir/47.6176482,-122.3551744/enumclaw+expo+center/@47.4065602,-122.4391977,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x5490eded92f9b31d:0x7c3b05cd68089d18!2m2!1d-121.9631639!2d47.195209?entry=ttu" target="_blank" className="siteMapLink">Directions</Link>
                     <Link to="https://nprarodeo.com/" target="_blank" className="siteMapLink">NPRA</Link>
                 </div>
+                {/* Events Column */}
                 <div className="siteMapCol">
                     <h3 className="colTitle">Rodeo Events</h3>
                     <Link to="/rodeo-concerts" className="siteMapLink">Concerts</Link>
                     <Link to="/rodeo-info" className="siteMapLink">Rodeo</Link>
                     <Link to="https://www.rodeoticket.com/rodeos/enumclaw-pro-rodeo/2023/tickets" target="_blank" className="siteMapLink">Tickets</Link>
                 </div>
+                {/* Social Media Column */}
                 <div className="siteMapCol">
                     <h3 className="colTitle">Visit Us At...</h3>
                     <div className="socialMedia">

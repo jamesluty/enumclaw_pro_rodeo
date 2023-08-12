@@ -147,7 +147,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            {/* Sponsors Info */}
+            {/* Sponsors Information */}
             <div className="sponsorsDiv">
                 <h1 className="sponsorsTitle">Enumclaw Pro Rodeo Sponsors</h1>
                 <Link to="/become-a-sponsor"><h2 className="sponsorLink">Click here to become a Sponsor</h2></Link>
