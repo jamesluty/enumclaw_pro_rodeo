@@ -39,7 +39,7 @@ const Home = () => {
     useEffect(() => {
         window.scrollTo(0,0);
     }, [])
-    
+
     return (
         <div className="homeWrapper">
             {/* Main page information */}
@@ -49,7 +49,7 @@ const Home = () => {
                 <div className="infoLeft">
                     <h2 className="infoDate">August 25-27 2023</h2>
                     <h3 className="infoLocation">Enumclaw Expo Center</h3>
-                    <h3>ENUMCLAW EXPO CENTER RODEO ARENA</h3>
+                    <h3 className="infoArea">ENUMCLAW EXPO CENTER RODEO ARENA</h3>
                     <div className="events">
                         <div className="eventDay">
                             <h3 className="eventDate">Friday</h3>

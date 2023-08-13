@@ -194,7 +194,7 @@ body {
 .homeTitle {
   color: rgb(150, 85, 0);
   font-size: 80px;
-  padding: 70px 0px 0px 0px;
+  padding-top: 70px;
   text-align: center;
   text-shadow: 3px 3px 3px black;
 }
@@ -205,6 +205,54 @@ body {
   margin-top: 50px;
   text-align: center;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+  .homeTitle {
+    font-size: 70px;
+  }
+
+  .ticketsLink {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .homeTitle {
+    font-size: 60px;
+    padding-top: 50px;
+  }
+
+  .ticketsLink {
+    font-size: 28px;
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .homeTitle {
+    font-size: 50px;
+    padding-top: 40px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .ticketsLink {
+    font-size: 27px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homeTitle {
+    font-size: 35px;
+    padding: 0px 20px;
+    padding-top: 30px;
+  }
+
+  .ticketsLink {
+    font-size: 20px;
+    margin-top: 20px;
+  }
 }
 
 /* Main page information section */
@@ -230,6 +278,10 @@ body {
 
 .infoLocation {
   font-size: 30px;
+}
+
+.infoArea {
+  font-size: 20px;
 }
 
 .events {
@@ -285,14 +337,12 @@ body {
 }
 
 .infoText {
-  /* color: yellow; */
   color: rgb(1, 95, 1);
   font-size: 20px;
   font-style: italic;
   font-weight: 600;
   line-height: 33px;
   margin-bottom: 20px;
-  /* text-shadow: 0 0 1px black; */
 }
 
 .volunteerLink {
@@ -301,6 +351,192 @@ body {
   margin-bottom: 50px;
   text-align: center;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+  .infoDate {
+    font-size: 35px;
+  }
+
+  .infoLocation {
+    font-size: 25px;
+  }
+
+  .infoArea {
+    font-size: 18px;
+  }
+
+  .eventDate {
+    font-size: 25px;
+  }
+
+  .dateInfo {
+    font-size: 20px;
+  }
+
+  .priceTitle {
+    font-size: 25px;
+  }
+
+  .prices {
+    font-size: 20px;
+  }
+
+  .infoText {
+    font-size: 18px;
+  }
+
+  .volunteerLink {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .info {
+    gap: 20px;
+    margin: 40px 30px;
+  }
+
+  .infoDate {
+    font-size: 30px;
+  }
+
+  .infoLocation {
+    font-size: 20px;
+  }
+
+  .infoArea {
+    font-size: 15px;
+  }
+
+  .eventDate {
+    font-size: 20px;
+  }
+
+  .dateInfo {
+    font-size: 18px;
+  }
+
+  .priceTitle {
+    font-size: 20px;
+  }
+
+  .prices {
+    font-size: 18px;
+  }
+
+  .infoText {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .volunteerLink {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .info {
+    gap: 20px;
+    margin: 30px 30px;
+  }
+
+  .infoDate {
+    font-size: 25px;
+  }
+
+  .infoLocation {
+    font-size: 18px;
+  }
+
+  .infoArea {
+    font-size: 15px;
+  }
+
+  .events {
+    gap: 10px;
+    margin: 10px 0px;
+  }
+
+  .eventDate {
+    font-size: 20px;
+  }
+
+  .dateInfo {
+    font-size: 18px;
+  }
+
+  .priceTitle {
+    font-size: 20px;
+  }
+
+  .prices {
+    font-size: 15px;
+  }
+
+  .infoText {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .volunteerLink {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 10px;
+  }
+
+  .infoRight, .infoLeft {
+    margin: 0px 30px;
+    width: auto;
+  }
+
+  .infoDate {
+    font-size: 25px;
+  }
+
+  .infoLocation {
+    font-size: 18px;
+  }
+
+  .infoArea {
+    font-size: 15px;
+  }
+
+  .events {
+    gap: 10px;
+    margin: 10px 0px;
+  }
+
+  .eventDate {
+    font-size: 18px;
+  }
+
+  .dateInfo {
+    font-size: 15px;
+  }
+
+  .priceTitle {
+    font-size: 18px;
+  }
+
+  .prices {
+    font-size: 15px;
+  }
+
+  .infoText {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .volunteerLink {
+    font-size: 20px;
+  }
 }
 
 /* Concerts section */
@@ -333,6 +569,81 @@ body {
 .artistImg {
   height: 30vw;
   width: 25vw;
+}
+
+@media only screen and (max-width: 1200px) {
+  .concertsTitle {
+    font-size: 50px;
+  }
+
+  .artistInfo {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .concertsTitle {
+    font-size: 45px;
+  }
+
+  .artistDiv {
+    gap: 25px;
+    margin: 30px 15px;
+  }
+
+  .artistInfo {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .artistImg {
+    height: 35vw;
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .artistDiv {
+    gap: 10px;
+  }
+
+  .artistInfo {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .concertsTitle {
+    font-size: 35px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .artistDiv {
+    gap: 30px;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .artistInfo {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .artistImg {
+    align-self: center;
+    border-radius: 10px;
+    height: 70vw;
+    margin-top: 10px;
+    width: 80%;
+  }
 }
 
 /* Rodeo Event Section */
@@ -373,6 +684,63 @@ body {
 .eventImg:hover {
   transform: scale(1.05);
   filter: brightness(120%);
+}
+
+@media only screen and (max-width: 1200px) {
+  .eventsTitle {
+    font-size: 50px;
+  }
+
+  .eventName {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .eventsTitle {
+    font-size: 45px;
+  }
+
+  .eventsList {
+    margin-top: 20px;
+  }
+
+  .eventName {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .eventName {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .eventsTitle {
+    font-size: 35px;
+    text-shadow: 2px 2px 2px black;
+  }
+  .eventsTop, .eventsBot {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .event {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .eventName {
+    font-size: 25px;
+  }
+
+  .eventImg {
+    align-self: center;
+    height: 70vw;
+    width: 80%;
+  }
 }
 
 /* Sponsors List section */
@@ -426,6 +794,101 @@ body {
 
 .logo {
   height: 5vw;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sponsorsTitle {
+    font-size: 50px;
+  }
+
+  .presentingSponsor {
+    font-size: 40px;
+  }
+
+  .sponsorsListTitle {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .sponsorsTitle {
+    font-size: 45px;
+  }
+
+  .sponsorLink {
+    font-size: 28px;
+  }
+
+  .presentingSponsor {
+    font-size: 35px;
+  }
+
+  .sponsorsListTitle {
+    font-size: 35px;
+  }
+
+  .sponsorLogos {
+    margin: 30px 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sponsorLink {
+    font-size: 27px;
+  }
+
+  .presentingSponsor {
+    font-size: 30px;
+  }
+
+  .sponsorsListTitle {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .sponsorLogos {
+    margin: 20px 50px;
+  }
+
+  .presentingImg {
+    height: 20vw;
+  }
+
+  .logo {
+    height: 7vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sponsorsTitle {
+    font-size: 35px;
+    margin: 10px 20px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .sponsorLink {
+    font-size: 20px;
+  }
+
+  .presentingSponsor {
+    font-size: 20px;
+  }
+
+  .sponsorsListTitle {
+    font-size: 20px;
+  }
+
+  .sponsorLogos {
+    margin: 20px 20px;
+  }
+
+  .presentingImg {
+    height: 30vw;
+  }
+
+  .logo {
+    height: 10vw;
+  }
 }
 
 /* SiteMap Component */
