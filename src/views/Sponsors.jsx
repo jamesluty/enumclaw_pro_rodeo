@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import old_cannery from '../imgs/old_cannery.png';
 import northway from '../imgs/northway_logo.png';
@@ -27,6 +27,10 @@ import courier from '../imgs/courier_logo.png';
 import bell from '../imgs/bell_logo.svg';
 
 const Sponsors = () => {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [])
+    
     return (
         <div className="sponsorsWrapper">
             <h1 className="sponsorsPageTitle">Enumclaw Pro Rodeo Sponsors</h1>

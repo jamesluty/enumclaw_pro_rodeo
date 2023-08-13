@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import yates from '../imgs/hollywood_yates.webp';
 import blake from '../imgs/jared_blake.png';
@@ -36,6 +36,10 @@ import courier from '../imgs/courier_logo.png';
 import bell from '../imgs/bell_logo.svg';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [])
+    
     return (
         <div className="homeWrapper">
             {/* Main page information */}

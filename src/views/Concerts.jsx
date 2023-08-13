@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import yates from '../imgs/hollywood_yates.webp';
 import blake from '../imgs/jared_blake.png';
 import vinny from '../imgs/bigg_vinny.webp';
 
 const Concerts = () => {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [])
+    
     return (
         <div className="concertWrapper">
             <h1 className="concertPageTitle">Enumclaw Pro Rodeo Concert Series</h1>

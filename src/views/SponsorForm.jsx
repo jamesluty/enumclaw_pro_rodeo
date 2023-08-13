@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 
 const Sponsor_Form = () => {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [])
+    
     const sendEmail = () => {
         
     }

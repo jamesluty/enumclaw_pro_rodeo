@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../imgs/EPR_logo.png';
 
 const Navbar = () => {
+
     const showInfo = () => {
         document.getElementById("infoDropdown").style.display = "block";
     }

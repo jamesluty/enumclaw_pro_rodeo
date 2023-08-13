@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import horseshoe from '../imgs/horseshoe.jpg';
 import rodeo from '../imgs/rodeo_info_img.webp';
 
 const Rodeo = () => {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [])
+    
     return (
         <div className="rodeoInfoWrapper">
             <h1 className="rodeoInfoTitle">Rodeo Info</h1>
