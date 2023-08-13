@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar';
+import NavbarComp from './components/Navbar';
 import Home from './views/Home';
 import Rodeo from './views/Rodeo';
 import Concerts from './views/Concerts';
@@ -11,7 +11,7 @@ import SiteMap from './components/SiteMap';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <NavbarComp/>
       <Routes>
         <Route path="/" exact element={<Home/>} />
         <Route path="/rodeo-info" exact element={<Rodeo/>} />

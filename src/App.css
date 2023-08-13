@@ -16,6 +16,7 @@ body {
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  padding: 5px 0px;
 }
 
 .navLinks {
@@ -138,7 +139,7 @@ body {
 
   .menuDropdown {
     background-color: rgb(90, 0, 0);
-    /* background-color: black; */
+    padding: 5px 0px;
     position: absolute;
     right: 0;
     width: 200px;
@@ -153,7 +154,30 @@ body {
     color: white;
     font-size: 18px;
     list-style: none;
-    padding: 10px 0px 10px 20px;
+    padding: 10px 0px 10px 30px;
+  }
+  
+  .menuListItem:hover {
+    color: yellow;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .navLogo {
+    width: 80px;
+  }
+
+  .menuIcon {
+    width: 35px;
+  }
+
+  .menuDropdown {
+    width: 150px;
+  }
+
+  .menuListItem {
+    font-size: 15px;
+    padding: 7px 0px 7px 20px;
   }
 }
 
