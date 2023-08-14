@@ -1078,7 +1078,7 @@ body {
   border: 2px solid rgb(150, 85, 0);
   box-shadow: 0 0 6px 3px rgb(168, 110, 34);
   margin: 40px 0px;
-  width: 300px;
+  width: 22vw;
 }
 
 .dashedLine {
@@ -1136,6 +1136,169 @@ body {
 .tabSubTitle {
   font-size: 20px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+  .rodeoInfoWrapper {
+    padding-bottom: 70px;
+  }
+  
+  .rodeoInfoTicket {
+    margin: 10px 100px 0px 100px;
+  }
+
+  .rodeoInfoTitle {
+    font-size: 50px;
+    padding: 50px 0px 30px 0px;
+  }
+
+  .rodeoInfoSecTitle {
+    font-size: 25px;
+  }
+
+  .rodeoInfoLeft {
+    gap: 10px;
+  }
+
+  .rodeoInfoDates {
+    font-size: 15px;
+  }
+
+  .rodeoInfoTimes {
+    font-size: 15px;
+  }
+
+  .halfCircle {
+    height: 60px;
+    width: 120px;
+    border-radius: 0 0 120px 120px;
+  }
+
+  .tabTitle {
+    font-size: 25px;
+  }
+
+  .tabInfo {
+    font-size: 15px;
+  }
+
+  .tabSubTitle {
+    font-size: 18px;
+  }
+
+  .purchaseBtn {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .rodeoInfoTicket {
+    margin: 10px 50px 0px 50px;
+  }
+
+  .rodeoInfoTitle {
+    font-size: 45px;
+    padding: 40px 0px 30px 0px;
+  }
+
+  .ticketTop, .ticketBottom {
+    gap: 0px;
+  }
+
+  .rodeoInfoImg {
+    margin: 60px 10px;
+    width: 25vw;
+  }
+
+  .rodeoInfoSecTitle {
+    font-size: 20px;
+  }
+
+  .rodeoInfoLeft {
+    gap: 10px;
+  }
+
+  .rodeoInfoDates {
+    font-size: 15px;
+  }
+
+  .rodeoInfoTimes {
+    font-size: 15px;
+  }
+
+  .halfCircle {
+    height: 40px;
+    width: 80px;
+    border-radius: 0 0 80px 80px;
+  }
+
+  .tabTitle {
+    font-size: 25px;
+  }
+
+  .tabInfo {
+    font-size: 15px;
+  }
+
+  .tabSubTitle {
+    font-size: 18px;
+  }
+
+  .purchaseBtn {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .rodeoInfoWrapper {
+    padding-bottom: 60px;
+  }
+  
+  .halfCircle {
+    display: none;
+  }
+
+  .rodeoInfoImg {
+    margin: 60px 0px;
+    width: 30vw;
+  }
+
+  .ticketTop {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rodeoInfoWrapper {
+    padding-bottom: 40px;
+  }
+
+  .rodeoInfoTicket {
+    margin: 10px 20px 0px 20px;
+  }
+
+  .ticketTop, .ticketBottom {
+    flex-direction: column-reverse;
+  }
+
+  .rodeoInfoLeft {
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+
+  .rodeoInfoRight {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rodeoInfoImg {
+    width: 65vw;
+  }
+
+  .dashedLineVert {
+    border: none;
+    border-top: 3px dashed rgb(150, 85, 0);
+  }
 }
 
 /* Concert Page */
