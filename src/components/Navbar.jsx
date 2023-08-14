@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../imgs/EPR_logo.png';
+import logo from '../imgs/EPR_logo_black.png';
 import menu_icon from '../imgs/menu_icon.png';
 
 const Navbar = () => {

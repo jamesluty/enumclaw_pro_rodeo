@@ -34,6 +34,8 @@ import luft from '../imgs/luft_logo.png';
 import columbia from '../imgs/columbia_logo.png';
 import courier from '../imgs/courier_logo.png';
 import bell from '../imgs/bell_logo.svg';
+import cloud1 from '../imgs/cloud1.png';
+import cloud2 from '../imgs/cloud2.png';
 
 const Home = () => {
     useEffect(() => {
@@ -42,6 +44,20 @@ const Home = () => {
 
     return (
         <div className="homeWrapper">
+            <div className="smokeClouds">
+                <img src={cloud1} alt="cloud" className="cloud1"/>
+                <img src={cloud1} alt="cloud" className="cloud2"/>
+                <img src={cloud1} alt="cloud" className="cloud3"/>
+                <img src={cloud2} alt="cloud" className="cloud4"/>
+                <img src={cloud2} alt="cloud" className="cloud5"/>
+                <img src={cloud2} alt="cloud" className="cloud6"/>
+                <img src={cloud1} alt="cloud" className="cloud7"/>
+                <img src={cloud2} alt="cloud" className="cloud8"/>
+                <img src={cloud1} alt="cloud" className="cloud9"/>
+                <img src={cloud2} alt="cloud" className="cloud10"/>
+                <img src={cloud1} alt="cloud" className="cloud11"/>
+                <img src={cloud2} alt="cloud" className="cloud12"/>
+            </div>
             {/* Main page information */}
             <h1 className="homeTitle">Enumclaw Pro Rodeo</h1>
             <Link to="https://www.rodeoticket.com/rodeos/enumclaw-pro-rodeo/2023/tickets" target="_blank"><h1 className="ticketsLink">Get Your Rodeo TICKETS HERE</h1></Link>
