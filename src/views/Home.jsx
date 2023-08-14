@@ -34,8 +34,8 @@ import luft from '../imgs/luft_logo.png';
 import columbia from '../imgs/columbia_logo.png';
 import courier from '../imgs/courier_logo.png';
 import bell from '../imgs/bell_logo.svg';
-import cloud1 from '../imgs/cloud1.png';
-import cloud2 from '../imgs/cloud2.png';
+import cloud1 from '../imgs/cloud3.png';
+import cloud2 from '../imgs/cloud4.png';
 
 const Home = () => {
     useEffect(() => {
