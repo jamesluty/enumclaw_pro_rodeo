@@ -942,6 +942,7 @@ body {
 
 .colTitle {
   color: rgb(150, 85, 0);
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
@@ -949,6 +950,60 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .siteMapLinks {
+    gap: 30px;
+    padding: 30px 50px;
+  }
+
+  .colTitle {
+    font-size: 18px;
+  }
+
+  .siteMapLink {
+    font-size: 15px;
+  }
+
+  .eprLogo {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .siteMapLinks {
+    gap: 10px;
+  }
+  
+  .colTitle {
+    font-size: 18px;
+  }
+
+  .siteMapLink {
+    align-self: center;
+    width: 300px;
+  }
+
+  .eprLogo {
+    width: 180px
+  }
+
+  .socialLogo {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .siteMapLinks {
+    flex-direction: column;
+    padding: 15px 0px 30px 0px;
+  }
+
+  .eprLogo {
+    align-self: center;
+    margin-top: 0px;
+  }
 }
 
 /* Rodeo Info Page */
@@ -1101,6 +1156,43 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  .concertPageTitle {
+    font-size: 50px;
+    padding: 70px 0px 30px 0px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .concertWrapper {
+    padding-bottom: 30px;
+  }
+  
+  .concertPageTitle {
+    font-size: 40px;
+    padding: 45px 0px 30px 0px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .concertWrapper {
+    padding-bottom: 20px;
+  }
+
+  .concertPageTitle {
+    font-size: 35px;
+    padding: 30px 0px 10px 0px;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .concertPageTitle {
+    font-size: 30px;
+    padding: 30px 0px 10px 0px;
+  }
+}
+
 /* Sponsors Page */
 .sponsorsWrapper {
   background: fixed;
@@ -1162,6 +1254,130 @@ body {
   color: rgb(205, 127, 50);
   font-size: 45px;
   text-shadow: 0px 0px 5px black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sponsorsPageTitle {
+    font-size: 50px;
+    padding: 60px 0px 30px 0px;
+  }
+
+  .presSponsorTitle {
+    font-size: 45px;
+  }
+
+  .platinumListTitle {
+    font-size: 35px;
+  }
+
+  .goldListTitle {
+    font-size: 35px;
+  }
+
+  .silverListTitle {
+    font-size: 35px;
+  }
+
+  .bronzeListTitle {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .sponsorsPageTitle {
+    font-size: 45px;
+  }
+
+  .presSponsorTitle {
+    font-size: 40px;
+  }
+
+  .platinumListTitle {
+    font-size: 30px;
+  }
+
+  .goldListTitle {
+    font-size: 30px;
+  }
+
+  .silverListTitle {
+    font-size: 30px;
+  }
+
+  .bronzeListTitle {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sponsorsPageTitle {
+    font-size: 35px;
+    padding: 40px 0px 30px 0px;
+  }
+
+  .presSponsorTitle {
+    font-size: 35px;
+  }
+
+  .platinumListTitle {
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-shadow: 0px 0px 3px black;
+  }
+
+  .goldListTitle {
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-shadow: 0px 0px 3px black;
+  }
+
+  .silverListTitle {
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-shadow: 0px 0px 3px black;
+  }
+
+  .bronzeListTitle {
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-shadow: 0px 0px 3px black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sponsorsPageTitle {
+    font-size: 30px;
+    padding: 30px 0px 30px 0px;
+  }
+
+  .presSponsorTitle {
+    font-size: 30px;
+    margin: 0px 20px;
+  }
+
+  .platinumListTitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-shadow: 0px 0px 3px black;
+  }
+
+  .goldListTitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-shadow: 0px 0px 3px black;
+  }
+
+  .silverListTitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-shadow: 0px 0px 3px black;
+  }
+
+  .bronzeListTitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-shadow: 0px 0px 3px black;
+  }
 }
 
 /* Sponsor Form Page */
