@@ -747,6 +747,7 @@ body {
 }
 
 .artistImg {
+  border-radius: 10px;
   height: 30vw;
   width: 25vw;
 }
@@ -820,9 +821,9 @@ body {
   .artistImg {
     align-self: center;
     border-radius: 10px;
-    height: 70vw;
+    height: 80vw;
     margin-top: 10px;
-    width: 80%;
+    width: 95%;
   }
 }
 
@@ -919,7 +920,7 @@ body {
   .eventImg {
     align-self: center;
     height: 70vw;
-    width: 80%;
+    width: 95%;
   }
 }
 

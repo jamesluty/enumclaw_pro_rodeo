@@ -109,7 +109,7 @@ const Home = () => {
                     <p className="infoText">The Enumclaw Pro Rodeo offers a spectacular rodeo weekend with top prize money, the finest livestock, the best rodeo announcer and rodeo entertainer in professional rodeo.</p>
                 </div>
             </div>
-            <Link to="https://www.comevolunteer.com/events/14456-enumclaw-pro-rodeo/volunteer" target="_blank"><h1 className="volunteerLink">Volunteer to Help at this years Rodeo</h1></Link>
+            <Link to="https://www.comevolunteer.com/events/14456-enumclaw-pro-rodeo/volunteer" target="_blank"><h1 className="volunteerLink">Volunteer to Help at this Rodeo</h1></Link>
             {/* Rodeo Concerts */}
             <div className="concertsDiv">
                 <h1 className="concertsTitle">Rodeo Concerts</h1>
