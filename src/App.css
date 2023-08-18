@@ -1781,6 +1781,7 @@ body {
   align-self: center;
   background-color: rgb(63, 63, 63);
   color: white;
+  font-size: 15px;
   padding: 15px;
   width: 200px;
 }
@@ -1789,12 +1790,16 @@ body {
   background-color: black;
 }
 
+.bundles {
+  margin: 0px 25%
+}
+
 .platinumBundle {
   background-color: rgb(229, 228, 226);
   border: 2px solid red;
   border-radius: 5px;
   box-shadow: 3px 3px 3px black, -3px 3px 3px black;
-  margin: 30px 25%;
+  margin: 30px 0;
   padding: 20px;
 }
 
@@ -1814,7 +1819,7 @@ body {
   border: 2px solid red;
   border-radius: 5px;
   box-shadow: 3px 3px 3px black, -3px 3px 3px black;
-  margin: 30px 25%;
+  margin: 30px 0;
   padding: 20px;
 }
 
@@ -1823,7 +1828,7 @@ body {
   border: 2px solid red;
   border-radius: 5px;
   box-shadow: 3px 3px 3px black, -3px 3px 3px black;
-  margin: 30px 25%;
+  margin: 30px 0;
   padding: 20px;
 }
 
@@ -1832,6 +1837,131 @@ body {
   border: 2px solid red;
   border-radius: 5px;
   box-shadow: 3px 3px 3px black, -3px 3px 3px black;
-  margin: 30px 25%;
+  margin: 30px 0;
   padding: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sponsorFormWrapper {
+    padding: 60px 0px 100px 0px;
+  }
+
+  .bundles {
+    margin: 0 20%;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .sponsorFormWrapper {
+    padding: 50px 0px 100px 0px;
+  }
+
+  .sponsorFormTitle {
+    font-size: 35px;
+  }
+
+  .sponsorFormSubTitle {
+    font-size: 17px;
+  }
+
+  .bundles {
+    margin: 0 13%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sponsorFormTitle {
+    font-size: 30px;
+  }
+
+  .sponsorFormSubTitle {
+    font-size: 15px;
+  }
+
+  .companyInput {
+    font-size: 15px;
+    padding: 12px 12px;
+    width: 457px;
+  }
+
+  .bundles {
+    margin: 0px 10%;
+  }
+
+  .formInput {
+    font-size: 15px;
+    padding: 12px 12px;
+    width: 200px;
+  }
+
+  .bundleTitle {
+    font-size: 20px;
+  }
+
+  .bundleText {
+    font-size: 17px;
+  }
+  
+  .formSubmit {
+    padding: 12px;
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sponsorFormWrapper {
+    padding: 30px 0px 50px 0px;
+  }
+
+  .sponsorFormTitle {
+    font-size: 30px;
+  }
+
+  .sponsorFormSubTitle {
+    font-size: 15px;
+  }
+
+  .sponsorForm {
+    gap: 12px;
+    margin: 30px 3% 30px 3%;
+  }
+
+  .companyInput {
+    align-self: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .formLine {
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 10px;
+  }
+
+  .formInput {
+    align-self: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .formSubmit {
+    font-size: 12px;
+    padding: 10px;
+    width: 140px;
+  }
+
+  .bundles {
+    margin: 0px 3%;
+  }
+
+  .bundleTitle {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .bundleText {
+    font-size: 13px;
+  }
 }
