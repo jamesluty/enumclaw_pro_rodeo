@@ -44,7 +44,8 @@ const Home = () => {
 
     return (
         <div className="homeWrapper">
-            <div className="smokeClouds">
+            {/* Cloud effect */}
+            {/* <div className="smokeClouds">
                 <img src={cloud1} alt="cloud" className="cloud1"/>
                 <img src={cloud1} alt="cloud" className="cloud2"/>
                 <img src={cloud1} alt="cloud" className="cloud3"/>
@@ -57,7 +58,7 @@ const Home = () => {
                 <img src={cloud2} alt="cloud" className="cloud10"/>
                 <img src={cloud1} alt="cloud" className="cloud11"/>
                 <img src={cloud2} alt="cloud" className="cloud12"/>
-            </div>
+            </div> */}
             {/* Main page information */}
             <h1 className="homeTitle">Enumclaw Pro Rodeo</h1>
             <Link to="https://www.rodeoticket.com/rodeos/enumclaw-pro-rodeo/2023/tickets" target="_blank"><h1 className="ticketsLink">Get Your Rodeo TICKETS HERE</h1></Link>

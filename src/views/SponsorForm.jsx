@@ -1,12 +1,87 @@
-import React, { useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 
 const Sponsor_Form = () => {
+    const form = useRef();
+    const [company, setCompany] = useState("");
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("");
+    const [firstNameError, setFirstNameError] = useState(false);
+    const [lastNameError, setLastNameError] = useState(false);
+    const [emailError, setEmailError] = useState(false);
+    const [validEmailError, setValidEmailError] = useState(false);
+    const [phoneNumberError, setPhoneNumberError] = useState(false);
+    const [numberLengthError, setNumberLengthError] = useState(false);
+    let valid = true;
+    let validEmail = false;
+    let navigate = useNavigate();
+
     useEffect(() => {
         window.scrollTo(0,0);
     }, [])
-    
-    const sendEmail = () => {
-        
+
+    const isValidEmail = (email) => {
+        return /\S+@\S+\.\S+/.test(email)
+    }
+
+    const checkValues = (first, last, phone, email) => {
+        valid = true;
+        if(first.length < 1){
+            setFirstNameError(true);
+            valid = false;
+        } else {
+            setFirstNameError(false);
+        }
+
+        if(last.length < 1){
+            setLastNameError(true);
+            valid = false;
+        } else {
+            setLastNameError(false);
+        }
+
+        if(phone.length < 1){
+            setPhoneNumberError(true);
+            valid = false;
+        } else {
+            setPhoneNumberError(false);
+        }
+
+        if(phone.length !== 10) {
+            setNumberLengthError(true);
+            valid = false;
+        } else {
+            setNumberLengthError(false);
+        }
+
+        validEmail = isValidEmail(email);
+
+        if(!validEmail) {
+            setValidEmailError(true);
+            valid = false;
+        } else {
+            setValidEmailError(false);
+        }
+
+        if(email.length < 1){
+            setEmailError(true);
+            valid = false;
+        } else {
+            setEmailError(false);
+        }
+    }
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        checkValues(firstName, lastName, phoneNumber, email);
+
+        if(valid){
+            
+        }
     }
 
     return (
@@ -15,14 +90,31 @@ const Sponsor_Form = () => {
             <p className="sponsorFormSubTitle">To become a sponsor, please fill out this form.</p>
             
             {/* Sponsor Form */}
-            <form action={sendEmail} className="sponsorForm">
+            <form onSubmit={sendEmail} className="sponsorForm">
                 <div className="formLine">
-                    <input type="text" name="first_name" id="firstName" placeholder='First Name' className="formInput"/>
-                    <input type="text" name="last_name" id="lastName" placeholder='Last Name' className="formInput"/>
+                    <input type="text" name="company" id="company" placeholder='Company (optional)' className="companyInput" onChange={(e) => setCompany(e.target.value)} value={company}/>
                 </div>
                 <div className="formLine">
-                    <input type="text" name="email" id="email" placeholder='Email' className="formInput"/>
-                    <input type="text" name="phone" id="phone" placeholder='Phone Number' className="formInput"/>
+                    <div className="formDiv">
+                        <input type="text" name="first_name" id="firstName" placeholder='First Name' className="formInput" onChange={(e) => setFirstName(e.target.value)} value={firstName} />
+                        {firstNameError ? <p className="error">First Name is Required</p> : ""}
+                    </div>
+                    <div className="formDiv">
+                        <input type="text" name="last_name" id="lastName" placeholder='Last Name' className="formInput" onChange={(e) => setLastName(e.target.value)} value={lastName} />
+                        {lastNameError ? <p className="error">Last Name is Required</p> : ""}
+                    </div>
+                </div>
+                <div className="formLine">
+                    <div className="formDiv">
+                        <input type="text" name="email" id="email" placeholder='Email' className="formInput" onChange={(e) => setEmail(e.target.value)} value={email} />
+                        {emailError ? <p className="error">Email is Required</p> : ""}
+                        {validEmailError && !emailError ? <p className="error">Email format incorrect</p> : ""}
+                    </div>
+                    <div className="formDiv">
+                        <input type="text" name="phone" id="phone" placeholder='Phone Number' className="formInput" onChange={(e) => setPhoneNumber(e.target.value)} value={phoneNumber} />
+                        {phoneNumberError ? <p className="error">Phone Number is required</p>: ""}
+                        {numberLengthError && !phoneNumberError ? <p className="error">Number must be 10 digits long</p> : ""}
+                    </div>
                 </div>
                 <input type="submit" value="Submit" className="formSubmit"/>
             </form>
