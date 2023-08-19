@@ -20,7 +20,7 @@ const Sponsor_Form = () => {
     let navigate = useNavigate();
 
     // EmailJs Information
-    const publicKey = "";
+    const publicKey = "AKjqKwgyZoYK3-vU0";
     const templateId = "";
     const serviceId = "";
 
@@ -107,22 +107,22 @@ const Sponsor_Form = () => {
                 </div>
                 <div className="formLine">
                     <div className="formDiv">
-                        <input type="text" name="first_name" id="firstName" placeholder='First Name' className="formInput" onChange={(e) => setFirstName(e.target.value)} value={firstName} />
+                        <input type="text" name="first_name" id="firstName" placeholder='First Name *' className="formInput" onChange={(e) => setFirstName(e.target.value)} value={firstName} />
                         {firstNameError ? <p className="error">First Name is Required</p> : ""}
                     </div>
                     <div className="formDiv">
-                        <input type="text" name="last_name" id="lastName" placeholder='Last Name' className="formInput" onChange={(e) => setLastName(e.target.value)} value={lastName} />
+                        <input type="text" name="last_name" id="lastName" placeholder='Last Name *' className="formInput" onChange={(e) => setLastName(e.target.value)} value={lastName} />
                         {lastNameError ? <p className="error">Last Name is Required</p> : ""}
                     </div>
                 </div>
                 <div className="formLine">
                     <div className="formDiv">
-                        <input type="text" name="email" id="email" placeholder='Email' className="formInput" onChange={(e) => setEmail(e.target.value)} value={email} />
+                        <input type="text" name="email" id="email" placeholder='Email *' className="formInput" onChange={(e) => setEmail(e.target.value)} value={email} />
                         {emailError ? <p className="error">Email is Required</p> : ""}
                         {validEmailError && !emailError ? <p className="error">Email format incorrect</p> : ""}
                     </div>
                     <div className="formDiv">
-                        <input type="text" name="phone" id="phone" placeholder='Phone Number' className="formInput" onChange={(e) => setPhoneNumber(e.target.value)} value={phoneNumber} />
+                        <input type="text" name="phone" id="phone" placeholder='Phone Number *' className="formInput" onChange={(e) => setPhoneNumber(e.target.value)} value={phoneNumber} />
                         {phoneNumberError ? <p className="error">Phone Number is required</p>: ""}
                         {numberLengthError && !phoneNumberError ? <p className="error">Number must be 10 digits long</p> : ""}
                     </div>
