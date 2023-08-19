@@ -99,6 +99,7 @@ const Navbar = () => {
                             <Link to="/rodeo-concerts" onClick={hideMenu} className="menuLink"><li className="menuListItem">Concerts</li></Link>
                             <Link to="/rodeo-info" onClick={hideMenu} className="menuLink"><li className="menuListItem">Rodeo</li></Link>
                             <Link to="https://www.rodeoticket.com/rodeos/enumclaw-pro-rodeo/2023/tickets" target="_blank" onClick={hideMenu} className="menuLink"><li className="menuListItem">Tickets</li></Link>
+                            <Link to="/become-a-sponsor" className="menuLink"><li className="menuListItem">Become a sponsor</li></Link>
                         </ul>
                     </div>
                 )}
